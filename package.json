@@ -1,5 +1,5 @@
 {
-  "name": "confM",
+  "name": "confm",
   "version": "0.1.0",
   "description": "simple server-side config solution",
   "main": "index.js",

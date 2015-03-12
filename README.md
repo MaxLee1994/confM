@@ -9,7 +9,7 @@
 
 ## Installation
 
-	npm install confM
+	npm install confm
 
 ## Usage
 
