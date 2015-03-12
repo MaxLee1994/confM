@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "description": "simple server-side config solution",
   "main": "index.js",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/MaxLee1994/confM"
+  },
   "keywords": [
       "config"
   ],
