@@ -1,0 +1,18 @@
+{
+  "name": "confM",
+  "version": "0.1.0",
+  "description": "simple server-side config solution",
+  "main": "index.js",
+  "keywords": [
+      "config"
+  ],
+  "scripts": {
+      "test": "mocha tests/confM-integ.js"
+  },
+  "author": "Max <liyue4158@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+      "expect.js": "^0.3.1",
+      "mocha": "2.2.1"
+  }
+}
