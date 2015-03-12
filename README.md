@@ -9,14 +9,14 @@
 
 ## Installation
 
-`npm install confM`
+	npm install confM
 
 ## Usage
 
 	var config = require('confM').create('conf/global.json);
 	config.get('a'); // 1
 	config.get('b', 'c'); // 2
-	
+
 ---
 global.json
 
@@ -32,4 +32,3 @@ global.json
 	git clone https://github.com/MaxLee1994/confM.git confM
 	cd confM
 	mocha tests/confM-integ.js
-	
