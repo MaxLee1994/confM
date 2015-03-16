@@ -16,6 +16,7 @@
 	var config = require('confM').create('conf/global.json);
 	config.get('a'); // 1
 	config.get('b', 'c'); // 2
+	config.getAll(); // {"a":1,"b":{"c":2}}
 
 ---
 global.json

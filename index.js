@@ -5,10 +5,10 @@
  */
 
 var fs = require('fs');
-
+var clone = require('clone');
 
 var Config = {
-    create: function(filename, fileChangeCallback) {
+    create: function(filename) {
         var obj = {};
 
         var _filename = filename;
@@ -17,7 +17,6 @@ var Config = {
         // constructor
         loadConfigFile();
         watchConfigFile();
-
 
         obj.get = function() {
 
@@ -32,6 +31,13 @@ var Config = {
             }
 
             return result;
+        };
+
+        obj.getAll = function() {
+
+            if(_config === undefined) return undefined;
+
+            return clone(_config);
         };
 
 
@@ -49,10 +55,6 @@ var Config = {
 
             fs.watch(_filename, function(event, filename) {
 
-                if(fileChangeCallback) {
-                    fileChangeCallback(event, filename);
-                }
-
                 if(event === 'rename') {
                     var pieces = _filename.split('/');
                     pieces[pieces.length - 1] = filename;
@@ -63,7 +65,6 @@ var Config = {
             });
 
         }
-
 
         return obj;
     }

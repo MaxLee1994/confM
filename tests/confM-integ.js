@@ -24,6 +24,7 @@ describe('confM Integration Test', function() {
         expect(config.get('b', 'e')).to.be(undefined);
         expect(config.get('e')).to.be.an('array');
         expect(config.get('f', 'g')[0]).to.be(7);
+        expect(config.getAll()).to.be.an('object');
     });
 
     it('file change', function(done) {

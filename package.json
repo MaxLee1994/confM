@@ -1,22 +1,25 @@
 {
   "name": "confm",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "simple server-side config solution",
   "main": "index.js",
   "repository": {
-      "type": "git",
-      "url": "https://github.com/MaxLee1994/confM"
+    "type": "git",
+    "url": "https://github.com/MaxLee1994/confM"
   },
   "keywords": [
-      "config"
+    "config"
   ],
   "scripts": {
-      "test": "mocha tests/confM-integ.js"
+    "test": "mocha tests/confM-integ.js"
   },
   "author": "Max <liyue4158@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-      "expect.js": "^0.3.1",
-      "mocha": "2.2.1"
+    "expect.js": "^0.3.1",
+    "mocha": "2.2.1"
+  },
+  "dependencies": {
+    "clone": "^1.0.1"
   }
 }
